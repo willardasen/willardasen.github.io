@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="scripts.js" ></script>
+    <script src="https://kit.fontawesome.com/dbace0acd2.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Logo for portofolio.png" alt="Logo" class="logo">
+            <ul id="sidemenu" class="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" style="color: #16FF00;" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" style="color: #16FF00;" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Mobile developer</p>
+            <h1>Hi, I'm <span>Willard</span> <br>bla bla bla bla bla </h1>
+        </div>
+    </div>
+</div>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" alt="user images">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am currently majoring in information technology and focusing in Mobile Application Technology department. 
+                    I am an ambitious and hardworking person who will stop at nothing to achieve a lesson in learning new things. 
+                    I have a high interest in technological advancement, especially website and mobile development. 
+                    Currently, I also have a slight interest in design, especially in UI/UX.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('Education')">Education</p>
+                    <p class="tab-links" onclick="openTab('Language')">Languages</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Mobile development</span><br>native: android and cross-platform: flutter</li>
+                        <li><span>Web development</span><br>Basic front-end</li>
+                        <li><span>UI/UX</span><br>Figma lo-fi and hi-fi</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Engish Literature and Debate Society (2021-2022) </span><br>Join a english debate club while in high school</li>
+                        <li><span>Keluarga Mahasiswa Buddhis Dhammavaddhana (2021-current)</span><br>A buddhist Organization and has been an activist for a year and  a staff since 2023 </li>
+                        <li><span>HIMTI (2022-2023)</span><br>A information technology Organization and has been and an activist for a year</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>SMA Sutomo 1 (2018-2021)</span><br>High School Diploma, Natural Science (2018-2021)</li>
+                        <li><span>Binus University(2021-current)</span><br>Undergraduate, Computer Science</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Language">
+                    <ul>
+                        <li><span>Indonesian</span><br>Native language/mother tongue</li>
+                        <li><span>English</span><br>C1 (advance) user</li>
+                        <li><span>Mandarin</span><br>B2 (Upper-intermediate) user</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-mobile-screen-button" style="color: #16FF00;"></i>
+                <h2>Mobile development</h2>
+                <p>I am capable of developing on native platform and cross-platform. For native platform development, I am using Android Studio for developing and android app using java.
+                    I have also uses SQLite and Firebase for the databases. For cross-platform development, I am using flutter.
+                </p>
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-figma" style="color: #16FF00;"></i>
+                <h2>UI/UX Design</h2>
+                <p>I am capable of understanding the basic of UX such as the framework, how to those framework, etc. I am also capable of prototyping a  simple lo-fi and hi-fi.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-code" style="color: #16FF00;"></i>
+                <h2>Web Design</h2>
+                <p>I am capable of developing the front-end interfaces using basic html, css and javascript. One of the work that has been done is this very portofolio website</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Masayu.png" alt="work 1">
+                <div class="layer">
+                    <h3>Masayu</h3>
+                    <p>Masayu is a mobile application developed using android studio for delivery of raw materials for Indonesian food, where menu options are available, 
+                        how to make, video tutorials for making and ordering. This is a team project</p>
+                    <div class="links-container">
+                        <div>
+                            <p>GitHub</p>
+                            <a href="https://github.com/BryanVK/Masayu_MobileApp"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                        </div>
+                        <div>
+                            <p>Figma</p>
+                            <a href="https://www.figma.com/proto/Je921DnrKq02u4hmmGDOuM/Final-Project?node-id=18-31&starting-point-node-id=18%3A31&mode=design&t=ogJeO9UhrT2GFrg1-1"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Jee Keyboard Store.png" alt="work 2">
+                <div class="layer">
+                    <h3>JeeKeyboardStore</h3>
+                    <p>This is a team project where we build a desktop app using JavaFX. The desktop app is a online keyboard shopping app called JeeKeyboardStore. 
+                        This app uses a simple singleton app for the databases.</p>
+                    <a href="https://github.com/willardasen/JeeKeyboardStore"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/BlueJack_Pharmacy.png" alt="work 3">
+                <div class="layer">
+                    <h3>BlueJack Pharmacy</h3>
+                    <p>Bluejack pharmarcy is a mobile android app where we build an app for a pharmarcy. 
+                        Some of the features consists of OTP code verification, purchasing and many more. This is a team project</p>
+                    <a href="https://github.com/rickywizard/BluejackPharmacy"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Vlad.png" alt="work 4">
+                <div class="layer">
+                    <h3>Vlad Blood Donor App</h3>
+                    <p>Bluejack pharmarcy is a mobile android app where we build an app for a pharmarcy. 
+                        Some of the features consists of OTP code verification, purchasing and many more. This is a team project</p>
+                    <a href="https://github.com/rickywizard/VladBloodDonorApp"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/willardasen" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- certificate -->
+<div id="certificate">
+    <div class="container">
+        <h1 class="sub-title">My certificate</h1>
+        <div class="certificate-list">
+            <div class="certif">
+                <img src="images/Javascript basic.png" alt="certif 1">
+                <div class="layer">
+                    <h3>Javascript Basic</h3>
+                    <p>Issued by: Dicoding Indonesia <br>Issued date: July 2023 <br>Expires date: July 2026</p>
+                    <a href="https://www.dicoding.com/certificates/QLZ9QNL92Z5D"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                </div>
+            </div>
+            <div class="certif">
+                <img src="images/Dart basic.png" alt="certif 2">
+                <div class="layer">
+                    <h3>Dart Basic</h3>
+                    <p>Issued by: Dicoding Indonesia <br>Issued date: August 2023 <br>Expires date: August 2026</p>
+                    <a href="https://www.dicoding.com/certificates/JMZV95QERPN9"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                </div>
+            </div>
+            <div class="certif">
+                <img src="images/UX basic.png" alt="certif 3">
+                <div class="layer">
+                    <h3>UX Basic</h3>
+                    <p>Issued by: Coursera <br>Issued date: Jul 2023</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/BFQ4Q9S5ACF6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                </div>
+            </div>
+            <div class="certif">
+                <img src="images/Finalist of UIUX Competition.png" alt="certif 3">
+                <div class="layer">
+                    <h3>Finalist of UI/UX Competition</h3>
+                    <p>Issued by: School of Information Systems, Bina Nusantara University <br>Issued date: September 2023</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/BFQ4Q9S5ACF6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #16FF00;"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://www.linkedin.com/in/willard-tiocuardy-a2a459270/" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- contact  -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-at" style="color: #16FF00;"></i>willard.tio@gmail.com</p>
+                <p><i class="fa-solid fa-phone" style="color: #16FF00;"></i>08116791168</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/willard-tiocuardy-a2a459270/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/willardasen"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="images/Willard CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>That's all for my website portofolio. For more information, please check out my social account.</p>
+    </div>
+</div>
+
+</body>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+</html>

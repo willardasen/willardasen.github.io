@@ -5,12 +5,12 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         let height = window.innerHeight;
         loader.style.transform = `translateY(-${height}px)`;
-    }, 8000);
+    }, 5000);
 
     setTimeout(() => {
         scrollDown.style.opacity = '1';
         loader.style.display = 'none';
-    }, 8000);
+    }, 5000);
 });
 
 

@@ -1,9 +1,11 @@
 // loading screen
 var loader = document.getElementById("loader")
 
-window.addEventListener("load",function(){
-    loader.style.display = "none";
-})
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 8000);
+});
 
 
 //tab link

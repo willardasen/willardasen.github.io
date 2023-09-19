@@ -1,3 +1,12 @@
+// loading screen
+var loader = document.getElementById("loader")
+
+window.addEventListener("load",function(){
+    loader.style.display = "none";
+})
+
+
+//tab link
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents")
 
